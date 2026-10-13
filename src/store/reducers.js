@@ -60,6 +60,10 @@ import PerformanceTypeDetailReducer from "./performanceType/detail/reducer";
 import DefaultPlanListReducer from "./defaultPlan/list/reducer";
 import CreateDefaultPlanReducer from "./defaultPlan/create/reducer";
 import DefaultPlanDetailReducer from "./defaultPlan/detail/reducer";
+// Why Choose
+import WhyChooseListReducer from "./whyChoose/list/reducer";
+import CreateWhyChooseReducer from "./whyChoose/create/reducer";
+import WhyChooseDetailReducer from "./whyChoose/detail/reducer";
 
 const rootReducer = combineReducers({
 	// public
@@ -120,6 +124,10 @@ const rootReducer = combineReducers({
 	DefaultPlanListReducer,
 	CreateDefaultPlanReducer,
 	DefaultPlanDetailReducer,
+	// 
+	WhyChooseListReducer,
+	WhyChooseDetailReducer,
+	CreateWhyChooseReducer
 });
 
 export default rootReducer;

@@ -90,6 +90,12 @@ export const postCreatePerformance = (body) => api.create(url.PERFORMANCE_MANAGE
 export const getPerformanceShowDetail = (param) => api.get(`${url.PERFORMANCE_MANAGEMENT_URI}/detail`, param);
 export const deletePerformance = (userId) => api.delete(`${url.PERFORMANCE_MANAGEMENT_URI}/delete/${userId}`, null);
 
+// Why Choose Management
+export const getWhyChooseList = () => api.get(url.WHY_CHOOSE_MANAGEMENT_URI, null);
+export const postCreateWhyChoose = (body) => api.create(url.WHY_CHOOSE_MANAGEMENT_URI, body);
+export const getWhyChooseShowDetail = (param) => api.get(`${url.WHY_CHOOSE_MANAGEMENT_URI}/detail`, param);
+export const deleteWhyChoose = (userId) => api.delete(`${url.WHY_CHOOSE_MANAGEMENT_URI}/delete/${userId}`, null);
+
 // News Management
 export const getNewsList = () => api.get(url.NEWS_MANAGEMENT_URI, null);
 export const postCreateNews = (body) => api.create(url.NEWS_MANAGEMENT_URI, body);

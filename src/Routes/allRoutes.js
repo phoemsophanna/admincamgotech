@@ -53,6 +53,9 @@ import TermOfService from "../pages/Pages/SiteSetting/TermOfService";
 import PrivacyPolicy from "../pages/Pages/SiteSetting/PrivacyPolicy";
 import PerformanceType from "../pages/Pages/WebHosting/PerformanceType";
 import DefaultPlan from "../pages/Pages/WebHosting/DefaultPlan";
+import WorkingProcess from "../pages/Pages/SiteSetting/WorkingProcess";
+import WhyChooseMenu from "../pages/Pages/WhyChoose";
+import WhyChooseForm from "../pages/Pages/WhyChoose/WhyChooseForm";
 
 const authProtectedRoutes = [
 	{ path: "/dashboard", component: <Dashboard /> },
@@ -109,7 +112,11 @@ const authProtectedRoutes = [
 	{ path: "/site-setting/skillset", component: <SiteSkillset /> },
 	{ path: "/term-service", component: <TermOfService /> },
 	{ path: "/privacy-policy", component: <PrivacyPolicy /> },
-
+	{ path: "/site-setting/working-process", component: <WorkingProcess /> },
+	// Why Choose
+	{ path: "/whyChoose-menu", component: <WhyChooseMenu /> },
+	{ path: "/whyChoose-menu/create", component: <WhyChooseForm /> },
+	{ path: "/whyChoose-menu/edit/:id", component: <WhyChooseForm /> },
 	// this route should be at the end of all other routes
 	// eslint-disable-next-line react/display-name
 	{

@@ -22,6 +22,7 @@ export const FILE_STORAGE_UPLOAD = "/file-storage/save-image";
 export const USER_MANAGEMENT_URI = "/users";
 export const SERVICE_MANAGEMENT_URI = "/services";
 export const PERFORMANCE_MANAGEMENT_URI = "/performances";
+export const WHY_CHOOSE_MANAGEMENT_URI = "/why-chooses";
 export const NEWS_MANAGEMENT_URI = "/news";
 export const PROJECT_CATEGORY_MANAGEMENT_URI = "/project-categories";
 export const PROJECT_MANAGEMENT_URI = "/projects";

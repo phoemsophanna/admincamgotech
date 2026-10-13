@@ -60,7 +60,15 @@ const Navdata = () => {
 				e.preventDefault();
 			},
 		},
-
+		{
+			id: "whyChoose-menu",
+			label: "Why Choose Us",
+			icon: "mdi mdi-shield-check-outline",
+			link: "/whyChoose-menu",
+			click: function (e) {
+				e.preventDefault();
+			},
+		},
 		{
 			id: "hosting",
 			label: "Web Hosting",

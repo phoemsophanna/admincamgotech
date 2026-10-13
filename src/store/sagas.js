@@ -57,6 +57,10 @@ import PageBannerListSaga from "./pageBanner/list/saga";
 import CreatePageBannerMainSaga from "./pageBanner/create/saga";
 import PageBannerDetailSaga from "./pageBanner/detail/saga";
 import SiteSettingSaga from "./siteSetting/saga";
+// Why Choose
+import WhyChooseListSaga from "./whyChoose/list/saga";
+import CreateWhyChooseMainSaga from "./whyChoose/create/saga";
+import WhyChooseDetailSaga from "./whyChoose/detail/saga";
 
 export default function* rootSaga() {
 	yield all([
@@ -116,5 +120,8 @@ export default function* rootSaga() {
 		fork(CreatePageBannerMainSaga),
 		fork(PageBannerDetailSaga),
 		fork(SiteSettingSaga),
+		fork(WhyChooseListSaga),
+		fork(WhyChooseDetailSaga),
+		fork(CreateWhyChooseMainSaga)
 	]);
 }

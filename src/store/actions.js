@@ -19,6 +19,10 @@ export * from "./service/detail/actions";
 export * from "./performance/list/actions";
 export * from "./performance/create/actions";
 export * from "./performance/detail/actions";
+// Performance management
+export * from "./whyChoose/list/actions";
+export * from "./whyChoose/create/actions";
+export * from "./whyChoose/detail/actions";
 // News management
 export * from "./news/list/actions";
 export * from "./news/create/actions";

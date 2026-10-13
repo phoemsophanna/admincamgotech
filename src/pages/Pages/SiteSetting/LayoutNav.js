@@ -91,6 +91,17 @@ const LayoutNav = (props) => {
 				<NavItem>
 					<NavLink
 						style={{ cursor: "pointer" }}
+						className={classnames({ active: props.router.location.pathname === "/site-setting/working-process" })}
+						onClick={() => {
+							toggle("working-process");
+						}}
+					>
+						Working Process
+					</NavLink>
+				</NavItem>
+				<NavItem>
+					<NavLink
+						style={{ cursor: "pointer" }}
 						className={classnames({ active: props.router.location.pathname === "/site-setting/project" })}
 						onClick={() => {
 							toggle("project");
