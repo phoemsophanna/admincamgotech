@@ -83,7 +83,7 @@ const ServiceMenu = () => {
 										{service.row.original.title}
 									</Link>
 								</h5>
-								<p className="text-muted text-truncate mb-0">
+								<p className="text-muted text-truncate mb-0" style={{width: 400}}>
 									<span className="fw-medium">{service.row.original.summary}</span>
 								</p>
 							</div>

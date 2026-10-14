@@ -140,7 +140,7 @@ const LayoutNav = (props) => {
 							toggle("tech-news");
 						}}
 					>
-						ព័ត៌មានបច្ចេកវិទ្យា
+						Tech News
 					</NavLink>
 				</NavItem>
 			</Nav>

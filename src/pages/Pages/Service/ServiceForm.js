@@ -89,6 +89,7 @@ const ServiceForm = (props) => {
 			isActive: service ? (service.isActive === 1 ? true : false) : true,
 			isDisplayHomepage: service ? (service.isDisplayHomepage === 1 ? true : false) : false,
 			image: service ? service.image : "",
+			svg: service ? service.svg : "",
 		},
 		validationSchema: Yup.object({
 			title: Yup.string().required("Please Enter Title"),
@@ -282,6 +283,22 @@ const ServiceForm = (props) => {
 												onBlur={serviceValidation.handleBlur}
 												value={serviceValidation.values.metaDesc || ""}
 											/>
+										</div>
+										<div className="mb-2">
+											<Label htmlFor="svg" className="form-label">
+												SVG
+											</Label>
+											<Input
+												id="svg"
+												name="svg"
+												type="textarea"
+												className="form-control"
+												placeholder="Enter text"
+												onChange={serviceValidation.handleChange}
+												onBlur={serviceValidation.handleBlur}
+												value={serviceValidation.values.svg || ""}
+											/>
+											<div className="svg-group" dangerouslySetInnerHTML={{__html: serviceValidation.values.svg}} />
 										</div>
 									</CardBody>
 								</Card>

@@ -66,6 +66,8 @@ const ContactUs = () => {
 			pageId: siteSetting ? siteSetting.pageId : "",
 			contactFormEmail: siteSetting ? siteSetting.contactFormEmail : "",
 			thumbnail: siteSetting ? siteSetting.thumbnail : "",
+			title: siteSetting ? siteSetting?.title : "",
+			description: siteSetting ? siteSetting?.description : ""
 		},
 		onSubmit: (values) => {
 			values.thumbnail = file?.length > 0 ? file[0]?.serverId : siteSetting.thumbnail;
@@ -143,6 +145,38 @@ const ContactUs = () => {
 											<Card>
 												<CardBody>
 													<Row>
+														<Col xl={12}>
+															<div className="mb-3">
+																<Label className="form-label" htmlFor="title-input">
+																	Title
+																</Label>
+																<Input
+																	type="text"
+																	className="form-control"
+																	id="title-input"
+																	placeholder="Enter text"
+																	name="title"
+																	onChange={settingForm.handleChange}
+																	onBlur={settingForm.handleBlur}
+																	value={settingForm.values.title}
+																/>
+															</div>
+														</Col>
+														<div className="mb-3">
+															<Label className="form-label" htmlFor="description-input">
+																Description
+															</Label>
+															<textarea
+																className="form-control"
+																id="description-input"
+																rows="3"
+																placeholder="Enter description"
+																name="description"
+																onChange={settingForm.handleChange}
+																onBlur={settingForm.handleBlur}
+																value={settingForm.values.description}
+															></textarea>
+														</div>
 														<Col xl={6}>
 															<div className="mb-3">
 																<Label className="form-label" htmlFor="email1-input">
