@@ -12,7 +12,7 @@ import { api } from "../../../config";
 import DeleteModal from "../../../Components/Common/DeleteModal";
 
 const BannerMenu = () => {
-	document.title = "Banner | Admin & Dashboards";
+	document.title = "Sliders | Admin & Dashboards";
 	const [UID, setUID] = useState(null);
 	const [deleteModal, setDeleteModal] = useState(false);
 
@@ -58,7 +58,7 @@ const BannerMenu = () => {
 				filterable: false,
 			},
 			{
-				Header: "Banner",
+				Header: "Sliders",
 				accessor: "title",
 				filterable: false,
 				Cell: (banner) => (
@@ -164,7 +164,7 @@ const BannerMenu = () => {
 		<React.Fragment>
 			<div className="page-content">
 				<Container fluid>
-					<BreadCrumb title="Banner Menu" pageTitle="Home" />
+					<BreadCrumb title="Sliders Menu" pageTitle="Home" />
 					<Row>
 						<Col lg={12}>
 							<Card>

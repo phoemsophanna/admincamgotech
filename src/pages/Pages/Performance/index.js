@@ -12,7 +12,7 @@ import { api } from "../../../config";
 import DeleteModal from "../../../Components/Common/DeleteModal";
 
 const PerformanceMenu = () => {
-	document.title = "Performance | Admin & Dashboards";
+	document.title = "Working Process | Admin & Dashboards";
 	const [UID, setUID] = useState(null);
 	const [deleteModal, setDeleteModal] = useState(false);
 
@@ -58,7 +58,7 @@ const PerformanceMenu = () => {
 				filterable: false,
 			},
 			{
-				Header: "Performance",
+				Header: "Working Process",
 				accessor: "title",
 				filterable: false,
 				Cell: (performance) => (
@@ -146,7 +146,7 @@ const PerformanceMenu = () => {
 		<React.Fragment>
 			<div className="page-content">
 				<Container fluid>
-					<BreadCrumb title="Performance Menu" pageTitle="Home" />
+					<BreadCrumb title="Working Process Menu" pageTitle="Home" />
 					<Row>
 						<Col lg={12}>
 							<Card>

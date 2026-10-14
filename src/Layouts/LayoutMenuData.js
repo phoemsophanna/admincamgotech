@@ -17,7 +17,7 @@ const Navdata = () => {
 		},
 		{
 			id: "banner-menu",
-			label: "Banner",
+			label: "Sliders",
 			icon: "mdi mdi-play-box-outline",
 			link: "/banner-menu",
 			click: function (e) {
@@ -53,7 +53,7 @@ const Navdata = () => {
 		},
 		{
 			id: "performance-menu",
-			label: "Performance",
+			label: "Working Process",
 			icon: "mdi mdi-bullseye-arrow",
 			link: "/performance-menu",
 			click: function (e) {

@@ -23,7 +23,7 @@ registerPlugin(FilePondPluginImageExifOrientation, FilePondPluginImagePreview);
 
 const BannerForm = (props) => {
 	const { id } = useParams();
-	document.title = `Banner: ${id ? "Edit" : "create"} | Admin & Dashboards`;
+	document.title = `Sliders: ${id ? "Edit" : "create"} | Admin & Dashboards`;
 	const dispatch = useDispatch();
 	const [file, setFile] = useState([]);
 
@@ -94,14 +94,14 @@ const BannerForm = (props) => {
 		<React.Fragment>
 			<div className="page-content">
 				<Container fluid>
-					<BreadCrumb title="Banner Menu" pageTitle="Dashboard" pageLink="/banner-menu" />
+					<BreadCrumb title="Slider Menu" pageTitle="Dashboard" pageLink="/banner-menu" />
 					<Row>
 						<Col lg={12}>
 							<Card>
 								<CardHeader>
 									<Row className="justify-content-between align-items-center gy-3">
 										<Col lg={3}>
-											<h5 className="mt-2">{id ? "Edit" : "Create"} Banner</h5>
+											<h5 className="mt-2">{id ? "Edit" : "Create"} Slider</h5>
 										</Col>
 										<Col className="col-lg-auto">
 											<div className="d-md-flex text-nowrap gap-2">
@@ -130,7 +130,7 @@ const BannerForm = (props) => {
 									<CardBody>
 										<div className="mb-3">
 											<Label className="form-label" htmlFor="banner-title-input">
-												Banner Title <small className="text-danger">(Required)</small>
+												Slider Title <small className="text-danger">(Required)</small>
 											</Label>
 											<Input
 												type="text"

@@ -23,7 +23,7 @@ registerPlugin(FilePondPluginImageExifOrientation, FilePondPluginImagePreview);
 
 const PerformanceForm = (props) => {
 	const { id } = useParams();
-	document.title = `Performance: ${id ? "Edit" : "create"} | Admin & Dashboards`;
+	document.title = `Working Process: ${id ? "Edit" : "create"} | Admin & Dashboards`;
 	const dispatch = useDispatch();
 	const [file, setFile] = useState([]);
 
@@ -90,14 +90,14 @@ const PerformanceForm = (props) => {
 		<React.Fragment>
 			<div className="page-content">
 				<Container fluid>
-					<BreadCrumb title="Performance Menu" pageTitle="Dashboard" pageLink="/performance-menu" />
+					<BreadCrumb title="Working Process Menu" pageTitle="Dashboard" pageLink="/performance-menu" />
 					<Row>
 						<Col lg={12}>
 							<Card>
 								<CardHeader>
 									<Row className="justify-content-between align-items-center gy-3">
 										<Col lg={3}>
-											<h5 className="mt-2">{id ? "Edit" : "Create"} Performance</h5>
+											<h5 className="mt-2">{id ? "Edit" : "Create"} Working Process</h5>
 										</Col>
 										<Col className="col-lg-auto">
 											<div className="d-md-flex text-nowrap gap-2">
@@ -126,7 +126,7 @@ const PerformanceForm = (props) => {
 									<CardBody>
 										<div className="mb-3">
 											<Label className="form-label" htmlFor="performance-title-input">
-												Performance Title <small className="text-danger">(Required)</small>
+												Working Process Title <small className="text-danger">(Required)</small>
 											</Label>
 											<Input
 												type="text"
@@ -236,7 +236,7 @@ const PerformanceForm = (props) => {
 										</Button>
 									) : (
 										<Button type="submit" color="primary" className="btn-label">
-											<i className="ri-save-3-line label-icon align-middle fs-16 me-2"></i> Save Performance
+											<i className="ri-save-3-line label-icon align-middle fs-16 me-2"></i> Save Working Process
 										</Button>
 									)}{" "}
 									<Link className="btn btn-label btn-danger" to="/performance-menu">

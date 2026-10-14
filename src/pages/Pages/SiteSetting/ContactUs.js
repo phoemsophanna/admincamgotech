@@ -67,7 +67,8 @@ const ContactUs = () => {
 			contactFormEmail: siteSetting ? siteSetting.contactFormEmail : "",
 			thumbnail: siteSetting ? siteSetting.thumbnail : "",
 			title: siteSetting ? siteSetting?.title : "",
-			description: siteSetting ? siteSetting?.description : ""
+			description: siteSetting ? siteSetting?.description : "",
+			widget: siteSetting ? siteSetting?.widget : false
 		},
 		onSubmit: (values) => {
 			values.thumbnail = file?.length > 0 ? file[0]?.serverId : siteSetting.thumbnail;
@@ -424,6 +425,33 @@ const ContactUs = () => {
 																/>
 															</div>
 														</div>
+													</div>
+												</CardBody>
+											</Card>
+											<Card>
+												<CardHeader>
+													<div className="fw-bold">Widget Chat</div>
+												</CardHeader>
+												<CardBody>
+													<div className="form-check form-switch form-switch-md mb-3" dir="ltr">
+														<Input
+															type="checkbox"
+															className="form-check-input"
+															id="widget"
+															name="widget"
+															checked={Boolean(settingForm.values.widget)}
+															onChange={(e) => {
+																settingForm.setFieldValue("widget", e.target.checked);
+															}}
+															onBlur={settingForm.handleBlur}
+														/>
+
+														<Label className="form-check-label" htmlFor="widget">
+															Widget Chat:{" "}
+															<span className="fw-bolder">
+																{settingForm.values.widget ? "Active" : "Inactive"}
+															</span>
+														</Label>
 													</div>
 												</CardBody>
 											</Card>
