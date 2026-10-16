@@ -359,7 +359,7 @@ const ContactUs = () => {
 															onBlur={settingForm.handleBlur}
 															value={settingForm.values.tiktokLink || ""}
 														/>
-														<i className="ri-tiktok-fill"></i>
+														<i className="bx bxl-tiktok"></i>
 													</div>
 													<div className="form-icon mb-3">
 														<Input
