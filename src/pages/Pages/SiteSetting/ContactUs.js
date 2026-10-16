@@ -62,6 +62,8 @@ const ContactUs = () => {
 			instagramLink: siteSetting ? siteSetting.instagramLink : "",
 			telegramLink: siteSetting ? siteSetting.telegramLink : "",
 			linkedinLink: siteSetting ? siteSetting.linkedinLink : "",
+			tiktokLink: siteSetting ? siteSetting?.tiktokLink : "",
+			whatsappLink: siteSetting ? siteSetting?.whatsappLink : "",
 			appId: siteSetting ? siteSetting.appId : "",
 			pageId: siteSetting ? siteSetting.pageId : "",
 			contactFormEmail: siteSetting ? siteSetting.contactFormEmail : "",
@@ -346,6 +348,30 @@ const ContactUs = () => {
 															value={settingForm.values.linkedinLink || ""}
 														/>
 														<i className="ri-linkedin-line"></i>
+													</div>
+													<div className="form-icon mb-3">
+														<Input
+															type="text"
+															className="form-control form-control-icon"
+															placeholder="Enter link"
+															name="tiktokLink"
+															onChange={settingForm.handleChange}
+															onBlur={settingForm.handleBlur}
+															value={settingForm.values.tiktokLink || ""}
+														/>
+														<i className="ri-tiktok-fill"></i>
+													</div>
+													<div className="form-icon mb-3">
+														<Input
+															type="text"
+															className="form-control form-control-icon"
+															placeholder="Enter link"
+															name="whatsappLink"
+															onChange={settingForm.handleChange}
+															onBlur={settingForm.handleBlur}
+															value={settingForm.values.whatsappLink || ""}
+														/>
+														<i className="ri-whatsapp-line"></i>
 													</div>
 												</CardBody>
 											</Card>
